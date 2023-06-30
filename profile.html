@@ -1,3 +1,5 @@
+<script src="navbar.js"></script>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +12,9 @@
 </head>
 
 <body>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');</style>
+
+
     <div class="header-wrap">
     <header></header> 
     <div class="cols_container">
@@ -18,7 +23,7 @@
                 <img src="profile1.jpeg" alt="" srcset="">
                 <span></span>
             </div>
-            <h2>naruto uzumaki</h2>
+            <h2>Naruto Uzumaki</h2>
             <p>Hard work is worthless for those that don't believe in themselves.</p>
             <p>naruto@aol.com</p>
 
@@ -28,34 +33,33 @@
                 <li><span>1,000</span>Posts</li>
             </ul>
             <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, aut! Illum recusandae consequatur laborum sint ipsa perferendis harum veniam commodi, maiores sapiente minus. Ullam corrupti iure consequatur odit odio quod!</p>
-                <ul>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-pointerest"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></i></li>
-                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                </ul>
+                <p>In The Ninja World, Those Who Break The Rules Are Scum, That's True. But Those Who Abandon Their Friends Are Worse Than Scum.</p>
             </div>
         </div>
         <div class="right_col">
-            <nav>
-                <ul>
-                    <li><a href="#">post</a></li>
-                    <li><a href="#">logout</a></li>
-                    <li><a href="#">photos</a></li>
-                    <li><a href="#">about</a></li>
-                </ul>
-                <button>Follow</button>
-            </nav>
-            <div class="photos">
-                 <img src="images/image1.avif" alt="photo">
-                 <img src="images/images2.jpeg" alt="photo">
-                 <img src="images/image3.png" alt="photo">
-                 <img src="images/image4.jpeg" alt="photo">
-            </div>
+           
+            
         </div>
     </div>
+    <div class="photos">
+        <img src="images/image4.jpeg" alt="photo">
+   </div>
  </div>
 </div>
 </div>
+<script>
+    if(!isLoggedIn()){
+     location = "login.html"
+    } 
+     function getPost () {
+         const loginData = getLoginData();
+ const options = { 
+     method: "GET",
+     headers: {
+         "Content-Type": "application/json",
+         Authorization: `Bearer ${loginData.token}`,
+     },
+ }
+ };
+ </script>
 </body>
