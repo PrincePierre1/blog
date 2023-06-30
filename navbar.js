@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const pages = [
       { name: "Home", url: "index.html" },
       { name: "Login", url: "login.html" },
+      { name: "Posts", url: "posts.html" },
       { name: "Profile", url: "profile.html" },
       { name: "Registration", url: "registration.html" }
     ];
